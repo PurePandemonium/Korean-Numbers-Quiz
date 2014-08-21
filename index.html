@@ -1,0 +1,64 @@
+﻿ <html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="quiz.js"></script>
+            <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="quiz.css" rel="stylesheet">
+    </head>
+    <body role="document">
+        <div class="container" role="main">
+            <div class="page-header">
+                <h1>Korean Number Quiz</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Prompt</h3>
+                        </div>
+                        <div class="panel-body">
+                            <button id="startButton" class="btn btn-primary pull-left" onclick="NewNumber()">New Number</button>
+                            <span id="prompt" class="pull-right large-text"  >1000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Answer</h3>
+                        </div>
+                        <div class="panel-body">
+                        <button id="showAnswer" class="btn btn-info" onclick="ShowAnswer()">Show Answer</button>
+                          <span id="answer" class="large-text">천</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Options</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form name="options">
+                             <input type="checkbox" id="Option-reverse"> Reverse hangeul and numerals
+                             <p><br>
+                                 <input type="radio" name="difficulty" id="diff_easy" checked>Easy<br>
+                                 <input type="radio" name="difficulty" id="diff_medium">Medium
+                             </p>
+                            </form>
+                            <p>
+                            Source: <a href="http://www.omniglot.com/language/numbers/korean.htm">Numbers in Korean</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </body>
+ </html>
+ 
