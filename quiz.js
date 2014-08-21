@@ -59,6 +59,7 @@ function numberToHangul(num) {
         break;
     case 1:
         text = "일";
+        break;
     case 2: 
         text = "이";
         break;
